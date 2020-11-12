@@ -6,9 +6,11 @@ class App extends Component {
 		super(props);
 		this.state ={ 
 			isParaShown: false
-		}
-	};
-	showPara =() => {
+		};
+		this.showPara = this.showPara.bind(this);
+	}
+     
+	showPara() {
      this.setState({isParaShown: true});
 	}
 
