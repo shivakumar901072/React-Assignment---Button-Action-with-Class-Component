@@ -5,7 +5,7 @@ class App extends Component {
     constructor(props) {
 		super(props);
 		this.state ={ 
-			isParaShown: false
+			isParaShown: false,
 		};
 		this.showPara = this.showPara.bind(this);
 	}
