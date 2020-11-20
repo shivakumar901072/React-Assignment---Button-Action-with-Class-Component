@@ -17,13 +17,13 @@ class App extends Component {
     render() {
     	return(
     		<div id="main">
-				<button id="click">Show Paragraph</button>
+				<button id="click" onClick = {this.showPara}>Show Paragraph</button>
 				{this.state.isParaShown ? (
 				<p id="para">
 					 Hello, I've learnt to use the full-stack evaluation tool.
 					  This makes me so happy
 					  </p>
-				) : null}
+				) : null }
     		</div>
     	);
     }
